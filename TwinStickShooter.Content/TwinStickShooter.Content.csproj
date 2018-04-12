@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0266A1C4-BAB3-4EB8-BACE-555C527E2159}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwinStickShooter.Content</RootNamespace>
+    <AssemblyName>TwinStickShooter.Content</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Font\Audiowide.spritefont" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Audio\explosion-01.wav" />
+    <Content Include="Audio\explosion-02.wav" />
+    <Content Include="Audio\explosion-03.wav" />
+    <Content Include="Audio\explosion-04.wav" />
+    <Content Include="Audio\explosion-05.wav" />
+    <Content Include="Audio\explosion-06.wav" />
+    <Content Include="Audio\explosion-07.wav" />
+    <Content Include="Audio\explosion-08.wav" />
+    <Content Include="Audio\Music.mp3" />
+    <Content Include="Audio\shoot-01.wav" />
+    <Content Include="Audio\shoot-02.wav" />
+    <Content Include="Audio\shoot-03.wav" />
+    <Content Include="Audio\shoot-04.wav" />
+    <Content Include="Audio\spawn-01.wav" />
+    <Content Include="Audio\spawn-02.wav" />
+    <Content Include="Audio\spawn-03.wav" />
+    <Content Include="Audio\spawn-04.wav" />
+    <Content Include="Audio\spawn-05.wav" />
+    <Content Include="Audio\spawn-06.wav" />
+    <Content Include="Audio\spawn-07.wav" />
+    <Content Include="Audio\spawn-08.wav" />
+    <Content Include="Sprites\Black Hole.png" />
+    <Content Include="Sprites\Bullet.png" />
+    <Content Include="Sprites\Glow.png" />
+    <Content Include="Sprites\Laser.png" />
+    <Content Include="Sprites\Player.png" />
+    <Content Include="Sprites\Pointer.png" />
+    <Content Include="Sprites\Seeker.png" />
+    <Content Include="Sprites\Wanderer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

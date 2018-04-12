@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fa8c4127-c283-4b9b-95c0-7832f8718e30</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TwinStickShooter</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Art.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\EntityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\GameRoot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Sound.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\ParticleManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\ParticleState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\BlackHole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Bullet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\Enemy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\EnemySpawner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\PlayerShip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Gameplay\PlayerStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\ColorUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\MathUtil.cs" />
+  </ItemGroup>
+</Project>

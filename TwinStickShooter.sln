@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TwinStickShooter.Shared", "TwinStickShooter.Shared\TwinStickShooter.Shared.shproj", "{FA8C4127-C283-4B9B-95C0-7832F8718E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwinStickShooter.Win", "TwinStickShooter.Win\TwinStickShooter.Win.csproj", "{19C8AA3F-E8A4-4E1F-ACCE-8428F091D5D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwinStickShooter.Content", "TwinStickShooter.Content\TwinStickShooter.Content.csproj", "{0266A1C4-BAB3-4EB8-BACE-555C527E2159}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TwinStickShooter.Shared\TwinStickShooter.Shared.projitems*{19c8aa3f-e8a4-4e1f-acce-8428f091d5d3}*SharedItemsImports = 4
+		TwinStickShooter.Shared\TwinStickShooter.Shared.projitems*{fa8c4127-c283-4b9b-95c0-7832f8718e30}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C8AA3F-E8A4-4E1F-ACCE-8428F091D5D3}.Debug|x86.ActiveCfg = Debug|x86
+		{19C8AA3F-E8A4-4E1F-ACCE-8428F091D5D3}.Debug|x86.Build.0 = Debug|x86
+		{19C8AA3F-E8A4-4E1F-ACCE-8428F091D5D3}.Release|x86.ActiveCfg = Release|x86
+		{19C8AA3F-E8A4-4E1F-ACCE-8428F091D5D3}.Release|x86.Build.0 = Release|x86
+		{0266A1C4-BAB3-4EB8-BACE-555C527E2159}.Debug|x86.ActiveCfg = Debug|x86
+		{0266A1C4-BAB3-4EB8-BACE-555C527E2159}.Debug|x86.Build.0 = Debug|x86
+		{0266A1C4-BAB3-4EB8-BACE-555C527E2159}.Release|x86.ActiveCfg = Release|x86
+		{0266A1C4-BAB3-4EB8-BACE-555C527E2159}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D09879-910E-4FD6-AC87-FB54CE9851D2}
+	EndGlobalSection
+EndGlobal
