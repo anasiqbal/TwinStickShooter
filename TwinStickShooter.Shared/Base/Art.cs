@@ -12,6 +12,7 @@ namespace TwinStickShooter
 		public static Texture2D Pointer { get; private set; }
 		public static Texture2D BlackHole { get; private set; }
 		public static Texture2D LineParticle { get; private set; }
+		public static Texture2D Glow { get; private set; }
 
 		public static SpriteFont Font { get; private set; }
 
@@ -24,6 +25,7 @@ namespace TwinStickShooter
 			Pointer = content.Load<Texture2D> ("Sprites/Pointer");
 			BlackHole = content.Load<Texture2D> ("Sprites/Black Hole");
 			LineParticle = content.Load<Texture2D> ("Sprites/Laser");
+			Glow = content.Load<Texture2D> ("Sprites/Glow");
 
 			Font = content.Load<SpriteFont> ("Font/Audiowide");
 		}

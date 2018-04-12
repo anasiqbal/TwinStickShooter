@@ -14,6 +14,7 @@ namespace TwinStickShooter
 		SpriteBatch spriteBatch;
 
 		public static GameRoot Instance { get; private set; }
+		public static GameTime GameTime { get; private set; }
 		public static Viewport Viewport { get { return Instance.GraphicsDevice.Viewport; } }
 		public static Vector2 ScreenSize { get { return new Vector2 (Viewport.Width, Viewport.Height); } }
 
@@ -23,9 +24,9 @@ namespace TwinStickShooter
 		{
 			graphics = new GraphicsDeviceManager (this)
 			{
-				//PreferredBackBufferHeight = 1080,//720;
-				//PreferredBackBufferWidth = 1920,//1280;
-				//IsFullScreen = true
+				PreferredBackBufferHeight = 1080,//720;
+				PreferredBackBufferWidth = 1920,//1280;
+				IsFullScreen = true
 			};
 
 			Content.RootDirectory = "Content";
@@ -80,6 +81,7 @@ namespace TwinStickShooter
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Update(GameTime gameTime)
 		{
+			GameTime = gameTime;
 			// game exit scenarios
 			if (GamePad.GetState (PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState ().IsKeyDown (Keys.Escape))
 				Exit ();

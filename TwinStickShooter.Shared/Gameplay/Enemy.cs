@@ -67,7 +67,7 @@ namespace TwinStickShooter
 			for (int i = 0; i < 120; i++)
 			{
 				// 10 step speed variation
-				float speed = 1100f * (1f - 1 / rand.NextFloat (1f, 10f));
+				float speed = 400f * (1f - 1 / rand.NextFloat (1f, 10f));
 				var state = new ParticleState ()
 				{
 					velocity = rand.NextVector2 (speed, speed),
@@ -76,7 +76,7 @@ namespace TwinStickShooter
 				};
 
 				Color color = Color.Lerp (color1, color2, rand.NextFloat (0, 1));
-				GameRoot.ParticleManager.CreateParticle (Art.LineParticle, position, color, 190, 1.5f, state);
+				GameRoot.ParticleManager.CreateParticle (Art.LineParticle, position, color, 2f, 1.5f, state);
 			}
 		}
 

@@ -18,7 +18,7 @@ namespace TwinStickShooter
 		// lists for saving certain entities
 		static List<Bullet> bullets = new List<Bullet> ();
 		static List<Enemy> enemies = new List<Enemy> ();
-		static List<BlackHole> blackHoles = new List<BlackHole> ();
+		public static List<BlackHole> blackHoles = new List<BlackHole> ();
 		
 		static bool isUpdating;
 		static List<Entity> addedEntities = new List<Entity> ();

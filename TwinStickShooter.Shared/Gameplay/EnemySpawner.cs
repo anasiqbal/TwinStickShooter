@@ -24,7 +24,7 @@ namespace TwinStickShooter
 				if (rand.Next ((int) inverseSpawnChance) == 0)
 					EntityManager.Add (Enemy.CreateWanderer (GetSpawnPosition (), gameTime));
 
-				if (EntityManager.BlackHoleCount < 2 && rand.Next ((int) inverseBlackHoleChance) == 0)
+				if (EntityManager.BlackHoleCount < 4 && rand.Next ((int) inverseBlackHoleChance) == 0)
 					EntityManager.Add (new BlackHole (GetSpawnPosition ()));
 			}
 
